@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/}" method="post">
+    <p>
+        <label for="user_loginId">아이디</label>
+        <input type="text" id="user_loginId" name="user_loginId"></p>
+
+    </p>
+    <p>
+        <label for="user_passwd">비밀번호</label>
+        <input type="user_passwd" id="user_passwd" name="user_passwd"/>
+
+    </p>
+
+<!--    <p>-->
+<!--        <input type="radio" name="userType" value="1"> 수강생-->
+<!--        <input type="radio" name="userType" value="2"> 강사-->
+<!--        <input type="radio" name="userType" value="3"> 관리자-->
+<!--    </p>-->
+    <input type="submit" value="로그인" id="login">
+
+</form>
+
+
+</body>
+</html>
